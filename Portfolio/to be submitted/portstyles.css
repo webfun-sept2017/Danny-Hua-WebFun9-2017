@@ -1,0 +1,138 @@
+*{
+	margin: 0px;
+	padding: 0px;
+	font-family: sans-serif;
+}
+p{
+	font-size: 12pt;
+}
+a{
+	color: black;
+	font-size: 12pt;
+}
+#container{
+	width: 970px;
+	margin: 0px auto;
+	background: linear-gradient(to bottom right, #3f2146, #9e8cab, #3f2146);
+}
+#header{
+	width: 100%;
+	height: 50px;
+	background-color: white;
+}
+#header h1{
+	margin: 5px 15px;
+	display: inline-block;
+}
+.header_content{
+	font-weight: bold;
+	margin-left: 500px;
+	display: inline-block;
+}
+.my_image{
+	width: 435px;
+	margin-left: 15px;
+	margin-top: 15px;
+	display: inline-block;
+}
+.my_image img{
+	width: 100%;
+	height: auto;
+	border: 4px solid white;
+}
+.top_content{
+	width: 480px;
+	height: 290px;
+	margin-top: 15px;
+	margin-left: 20px;
+	background: linear-gradient(to right, #e8e8e8, #ceb9d2);
+	display: inline-block;
+	vertical-align: top;
+}
+.top_content p{
+	margin: 10px;
+}
+.top_content a{
+	margin-left: 10px;
+}
+.sub_header{
+	width: 100%;
+	height: 30px;
+	background: linear-gradient( #8a818c, #5e5b63, #8a818c);
+	display: inline-block;
+}
+.sub_header h3{
+	margin: 5px 10px;
+	color: white;
+}
+.sub_content{
+	width: 296px;
+	height: 400px;
+	margin-left: 19px;
+	margin-top: 15px;
+	background: linear-gradient(to right, #e8e8e8, #ceb9d2);
+	display: inline-block;
+	vertical-align: top;
+}
+.sub_content img{
+	width: 100%;
+	height: auto;
+}
+.sub_content p{
+	margin: 10px;
+	text-align: justify;
+}
+.bot_content{
+	width: 296px;
+	height: 200px;
+	margin-left: 19px;
+	background: linear-gradient(to right, #e8e8e8, #ceb9d2);
+	display: inline-block;
+	vertical-align: top;
+}
+.bot_content img{
+	margin-left: 5px;
+	margin-top: 10px;
+	width: 50px;
+}
+.bot_content button{
+	font-weight: bold;
+	color: white;
+	height: 25px;
+	border: 1px solid black;
+	border-radius: 7px;
+	background-color: green;
+	box-shadow: 3px 3px 3px gray;
+	padding: 5px;
+	margin: 10px auto;
+	display: block;
+}
+.sub_header h4{
+	margin: 6px 10px;
+	color: white;
+}
+#footer{
+	width: 100%;
+	height: 50px;
+	margin-top: 20px;
+	background-color: white;
+}
+.contact p{
+	padding-top: 10px;
+	text-align: center;
+}
+.contact a{
+	text-decoration: none;
+}
+.socialmedia{
+	margin: 10px auto;
+}
+.socialmedia img{
+	width: 25px;
+	margin: 10px;
+	vertical-align: middle;
+}
+.socialmedia p{
+	font-style: italic;
+	text-align: center;
+}
