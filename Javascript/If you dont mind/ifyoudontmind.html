@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <title>If you don't mind, Can I have the time?</title>
+    <script type="text/javascript">
+      var HOUR = 7;
+      var MINUTE = 15;
+      var PERIOD = "PM";
+      var justAfter = "just after ";
+      var almost = "almost ";
+      var morning = " in the morning";
+      var evening = " in the evening";
+
+      if (MINUTE > 30) {
+        var time = almost + "9";
+      }
+      else {
+        var time = justAfter + "7";
+      }
+
+      if (PERIOD = "PM") {
+        var day = evening;
+      }
+      else {
+        var day = morning;
+      }
+      console.log("It's " + time + day);
+    </script>
+  </head>
+  <body>
+
+  </body>
+</html>
