@@ -1,0 +1,140 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <title>jQuery Functions</title>
+    <style media="screen">
+      .color {
+        color: red;
+      }
+    </style>
+    <script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+    <script type="text/javascript">
+      $(document).ready(function(){
+        $("#click").click(function(){
+          alert("This is the click function");
+        })
+        $("#hideclick").click(function(){
+          $("#hide").hide("slow", function(){})
+        })
+        $("#showclick").click(function(){
+          $("#hide").show("slow", function(){})
+        })
+        $("#clicktoggle").click(function(){
+          $("#toggle").toggle("slow", function(){})
+        })
+        $("#slidedownclick").click(function(){
+          $("#slideup").slideDown("slow", function(){})
+        })
+        $("#slideupclick").click(function(){
+          $("#slideup").slideUp("slow", function(){})
+        })
+        $("#slidetogclick").click(function(){
+          $("#slideup").slideToggle("slow", function(){})
+        })
+        $("#fadeoutclick").click(function(){
+          $("#fadeout").fadeOut("slow", function(){})
+        })
+        $("#fadeinclick").click(function(){
+          $("#fadeout").fadeIn("slow", function(){})
+        })
+        $("#addclassclick").click(function(){
+          $("p").addClass("color")
+        })
+        $("#beforeclick").click(function(){
+          $("#before").before("<p>Before</p>")
+        })
+        $("#afterclick").click(function(){
+          $("#before").after("<p>After</p>")
+        })
+        $("#appendclick").click(function(){
+          $("#append").append(" Blah Blah Blah")
+        })
+        $("#htmlclick").click(function(){
+          $(".html").html("<p> blah blah blah</p>")
+        })
+        $("#attrclick").click(function(){
+          $("#attr").attr("style", "color:red;")
+        })
+        $("button").click(function(){
+          var text = $(this).text();
+          $("#val").val(text);
+        })
+        $("#dataclick").click(function(){
+          $("#data").data("info", {firstname: "Danny", lastname: "Hua"})
+          $(".first").text($("#data").data("info").firstname)
+          $(".last").text($("#data").data("info").lastname)
+        })
+      });
+    </script>
+  </head>
+  <body>
+    <h3>Click function</h3>
+    <button id="click" type="button" name="click">Click me!!!</button>
+    <p>=======================================================</p>
+    <h3>Hide function</h3>
+    <p id="hide">Please hide me!!!</p>
+    <button id="hideclick" type="button" name="hide">Hide this!!!</button>
+    <p>=======================================================</p>
+    <h3>Show function</h3>
+    <button id="showclick" type="button" name="show">Show me!!!</button>
+    <p>=======================================================</p>
+    <h3>Toggle function</h3>
+    <p id="toggle">Now you see me!!</p>
+    <button id="clicktoggle" type="button" name="toggle">Toggle</button>
+    <p>=======================================================</p>
+    <h3>Slide up function</h3>
+    <p id="slideup">Slip and slide</p>
+    <button id="slideupclick" type="button" name="slideup">Slide up</button>
+    <p>=======================================================</p>
+    <h3>Slide Down function</h3>
+    <button id="slidedownclick" type="button" name="slidedown">Slide Down</button>
+    <p>=======================================================</p>
+    <h3>Slide Toggle</h3>
+    <button id="slidetogclick" type="button" name="button">Slide Toggle</button>
+    <p>=======================================================</p>
+    <h3>Fade Out function</h3>
+    <p id="fadeout">Fading away</p>
+    <button id="fadeoutclick" type="button" name="button">Slide Toggle</button>
+    <p>=======================================================</p>
+    <h3>Fade In function</h3>
+    <button id="fadeinclick" type="button" name="button">Slide Toggle</button>
+    <p>=======================================================</p>
+    <h3>Add Class function</h3>
+    <button id="addclassclick" type="button" name="button">Slide Toggle</button>
+    <p>=======================================================</p>
+    <h3>Before function</h3>
+    <p id="before">what happen</p>
+    <button id="beforeclick" type="button" name="button">Before</button>
+    <p>=======================================================</p>
+    <h3>After function</h3>
+    <button id="afterclick" type="button" name="button">After</button>
+    <p>=======================================================</p>
+    <h3>Append function</h3>
+    <p id="append">say</p>
+    <button id="appendclick" type="button" name="button">Append</button>
+    <p>=======================================================</p>
+    <h3>HTML function</h3>
+    <p>Blah blah</p>
+    <div class="html"></div>
+    <button id="htmlclick" type="button" name="button">Blah Blah</button>
+    <p>=======================================================</p>
+    <h3>attr function</h3>
+    <p id="attr">This text is blue!</p>
+    <button id="attrclick" type="button" name="button">Click for attr</button>
+    <p>=======================================================</p>
+    <h3>.val and text function</h3>
+    <button>first button</button>
+    <button>second button</button>
+    <button>third button</button>
+    <input id="val" type="text" name="val" value="">
+    <p>=======================================================</p>
+    <h3>.data function</h3>
+    <div id="data">
+      <p>Data collected:</p>
+      <p class="first" style="color:blue;"></p>
+      <p class="last" style="color:red;"></p>
+    </div>
+    <button id="dataclick">Data display</button>
+  </body>
+</html>
