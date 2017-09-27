@@ -11,19 +11,12 @@
        {first_name : 'KB', last_name : 'Tonel'}
     ]
 
-    function firstLast(person){
-      // console.log(person.first_name);
-      // console.log(person.last_name);
-      return person.first_name + " " + person.last_name;
+    function firstLast(array){
+      for (var i = 0; i < array.length; i++) {
+        console.log(array[i].first_name + " " + array[i].last_name);
+      }
     }
-    var x = firstLast(students[0]);
-    var y = firstLast(students[1]);
-    var a = firstLast(students[2]);
-    var b = firstLast(students[3]);
-    console.log(x);
-    console.log(y);
-    console.log(a);
-    console.log(b);
+    firstLast(students)
     </script>
   </head>
   <body>
